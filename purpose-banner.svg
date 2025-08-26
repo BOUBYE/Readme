@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#060606"></stop>
+      <stop offset="50%" stop-color="#0f0f0f"></stop>
+      <stop offset="100%" stop-color="#060606"></stop>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0%" stop-color="#00ffcc"></stop>
+      <stop offset="100%" stop-color="#008080"></stop>
+    </linearGradient>
+    <filter id="softglow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"></feGaussianBlur>
+      <feMerge><feMergeNode in="b"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge>
+    </filter>
+  </defs>
+
+  <!-- frame -->
+  <rect x="10" y="10" width="1180" height="320" rx="20" fill="url(#bg)" stroke="#0b0b0b" stroke-width="3"></rect>
+
+  <!-- subtle decorative runes -->
+  <text x="50%" y="12%" dominant-baseline="middle" text-anchor="middle" font-family="Courier New, monospace" font-size="14" fill="#00ffcc" opacity="0.32" letter-spacing="6">
+    101010 • لا إله إلا الله • 010101
+  </text>
+
+  <!-- Arabic verse (centered, larger) -->
+  <text x="50%" y="38%" dominant-baseline="middle" text-anchor="middle" font-family="Scheherazade, 'Arabic Typesetting', 'Amiri', serif" font-size="34" fill="#f5f5f5" style="letter-spacing:1px;">
+    وَمَا خَلَقْتُ الْجِنَّ وَالْإِنسَ إِلَّا لِيَعْبُدُونِ
+  </text>
+
+  <!-- transliteration -->
+  <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle" font-family="Courier New, monospace" font-size="16" fill="#cbdede" opacity="0.9" letter-spacing="1">
+    Wa mā khalaqtu al-jinna wal-insa illā liyaʿbudūn
+  </text>
+
+  <!-- interpretive English rendering -->
+  <text x="50%" y="68%" dominant-baseline="middle" text-anchor="middle" font-family="Cinzel, serif, 'Times New Roman', serif" font-size="22" font-weight="700" fill="#e8f7f5" style="letter-spacing:1px;">
+    I created jinn and humans so they may live rightly and submit to Allah.
+  </text>
+
+  <!-- verse reference -->
+  <text x="50%" y="84%" dominant-baseline="middle" text-anchor="middle" font-family="Courier New, monospace" font-size="14" fill="#99d6cc" opacity="0.9">
+    — Surah Adh-Dhariyat, 51:56
+  </text>
+
+  <!-- soft glow behind English line -->
+  <text x="50%" y="68%" dominant-baseline="middle" text-anchor="middle" font-family="Cinzel, serif" font-size="22" fill="url(#accent)" opacity="0.12" filter="url(#softglow)">
+    I created jinn and humans so they may live rightly and submit to Allah.
+  </text>
+</svg>
